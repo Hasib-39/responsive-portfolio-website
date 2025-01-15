@@ -186,10 +186,7 @@ footer input[type="text"], footer textarea, footer input[type="email"]{
 }
 
 /* responsive media query */
-.hide{
-    display: none;
-}
-
+/* Mobile Device */
 @media screen and (max-width: 576px){
     .skills-container, 
     .resume-container, 
@@ -226,8 +223,29 @@ footer input[type="text"], footer textarea, footer input[type="email"]{
     }
 
 }
+/* Tablet Device */
+@media screen and (min-width: 576px) and (max-width: 990px){
+    .banner{
+        flex-direction: column;
+    }
 
-@media screen and (min-width: 576px) and (max-width: 992px){
-    
+    footer{
+        padding: 20px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    footer input[type="text"], footer textarea, footer input[type="email"]{
+        width: calc(100% - 40px);
+    }
+
+    .resume-container{
+        padding: 20px;
+    }
+
+    .skills-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
