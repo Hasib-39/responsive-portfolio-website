@@ -185,3 +185,49 @@ footer input[type="text"], footer textarea, footer input[type="email"]{
     font-size: 16px;
 }
 
+/* responsive media query */
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 576px){
+    .skills-container, 
+    .resume-container, 
+    footer, 
+    .about-items,
+    .banner,
+    nav,
+    nav > ul{
+        flex-direction: column;
+    }
+    footer{
+        padding: 20px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    footer input[type="text"], footer textarea, footer input[type="email"]{
+        width: calc(100% - 40px);
+    }
+
+    .banner{
+        margin: 20px;
+    }
+    .header{
+        background-image: none;
+    }
+
+    .banner-profile-pic{
+        width: 100%;
+    }
+
+    .btn-primary{
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+    
+}
+
